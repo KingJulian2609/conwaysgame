@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.conwaysgame.ConwaysController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Conways Game of Life" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Text>
+               </center>
+            </BorderPane>
+         </top>
+         <left>
+            <Slider fx:id="chanceSlider" blockIncrement="1.0" majorTickUnit="10.0" max="101" min="10" minorTickCount="10" prefHeight="50.0" prefWidth="200.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="10.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+      <Button mnemonicParsing="false" onAction="#start" prefHeight="50.0" prefWidth="225.0" text="Start">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</StackPane>
